@@ -10,6 +10,7 @@ import theme from "../theme";
 const Header = styled(Box)`
     margin: 0;
     padding: 0;
+
 `;
 const Main = styled(Box)`
     margin: 0;
@@ -33,7 +34,7 @@ export function Copyright() {
   );
 }
 
-const StickyFooter = ({ children }) => {
+const DefaulLayout = ({ children }) => {
 
     return (
         <ThemeProvider theme={theme}>
@@ -61,4 +62,4 @@ const StickyFooter = ({ children }) => {
   );
 }
 
-export default StickyFooter;
+export default DefaulLayout;

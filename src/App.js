@@ -1,11 +1,14 @@
 import React from 'react';
-import DefaulLayout from "./Layouts/layout.default.jsx";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Home from "./Views/Home.jsx";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-        <DefaulLayout/>
-    </div>
+    <Router className="App">
+        <Switch>
+            <Route path="/" component={ Home }/>
+        </Switch>
+    </Router>
   );
 }
 
